@@ -1,0 +1,9 @@
+<launch>
+
+	<node pkg="stage_ros" type="stageros" name="simstage_group9" args="$(find simstage_group9)/world/map.world" />
+
+	<node pkg="simstage_group9" type="simstage_group9_node" name="simstage_group9_node" output="screen"/>
+
+        <include file="$(find simstage_group9)/Launch/gmapping.launch"/>
+
+</launch>

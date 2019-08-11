@@ -1,0 +1,9 @@
+<launch>
+
+	<node pkg="gmapping" type="slam_gmapping" name="gmapping_group9">
+	<remap from="/scan" to="/base_scan"/>
+        </node>
+        <node type="rviz" name="rviz" pkg="rviz" output="screen"/>
+
+
+</launch>
